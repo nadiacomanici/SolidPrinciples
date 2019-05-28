@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsability_Studen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsability_Students_Penta", "SingleResponsability_Students_Penta\SingleResponsability_Students_Penta.csproj", "{A16C2C80-9CD4-4923-8652-4FED38102A0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsability_Orders_Penta", "SingleResponsability_Orders_Penta\SingleResponsability_Orders_Penta.csproj", "{604649EA-AA99-4A85-9B18-5F0D1D9F1050}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A16C2C80-9CD4-4923-8652-4FED38102A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A16C2C80-9CD4-4923-8652-4FED38102A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A16C2C80-9CD4-4923-8652-4FED38102A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604649EA-AA99-4A85-9B18-5F0D1D9F1050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604649EA-AA99-4A85-9B18-5F0D1D9F1050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604649EA-AA99-4A85-9B18-5F0D1D9F1050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604649EA-AA99-4A85-9B18-5F0D1D9F1050}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
