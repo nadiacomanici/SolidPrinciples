@@ -1,4 +1,6 @@
-﻿namespace SingleResponsability_Orders_End.Logic.Contracts
+﻿using DependencyInjection_Orders_End.Logic.Carts;
+
+namespace DependencyInjection_Orders_End.Logic.Contracts
 {
     public interface INotificationService
     {

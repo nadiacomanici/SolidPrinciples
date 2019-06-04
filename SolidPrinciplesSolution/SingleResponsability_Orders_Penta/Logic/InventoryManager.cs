@@ -6,14 +6,14 @@ namespace SingleResponsability_Orders_Penta.Logic
     public class InventoryManager
     {
         public void ReserveInventory(Cart cart)
-        {
-            Console.WriteLine("ReserveInventory");
+        {   
             var inventorySystem = new InventorySystem();
             foreach (var item in cart.Items)
             {
                 try
                 {
                     inventorySystem.Reserve(item.Id, item.Quantity);
+                    Console.WriteLine("ReserveInventory");
                 }
                 catch (InsufficientInventoryException)
                 {

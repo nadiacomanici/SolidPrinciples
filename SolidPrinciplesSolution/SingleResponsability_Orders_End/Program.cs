@@ -17,7 +17,7 @@ namespace SingleResponsability_Orders_End
 
             var customer = new Customer("Nadia", "Comanici", "nadia@email.com");
             
-            var creditCardPaymentDetails = new CreditCardPaymentDetails()
+            var creditCardPaymentDetails = new CreditCard()
             {
                 CardNumber = "ABCD 1234 ABCD 1234 ABCD 1234",
                 CardholderName = "Nadia C",
