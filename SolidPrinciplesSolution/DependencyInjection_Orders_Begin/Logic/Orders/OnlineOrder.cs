@@ -17,7 +17,6 @@ namespace DependencyInjection_Orders_Begin.Logic.Orders
             this.notificationService = new NotificationService();
             this.reservationService = new ReservationService();
             this.paymentProcessor = new PaymentProcessor();
-            this.reservationService = new ReservationService();
         }
 
         public override void Checkout()
