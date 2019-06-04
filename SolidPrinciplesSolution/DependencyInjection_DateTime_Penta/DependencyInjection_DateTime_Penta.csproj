@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{685A522F-09AF-45AB-804C-482F4FDF33CB}</ProjectGuid>
+    <ProjectGuid>{CB13149F-A3EB-4DED-86F8-7A2A77F6A88E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>DependencyInjection_DateTime_Begin</RootNamespace>
     <AssemblyName>DependencyInjection_DateTime_Begin</AssemblyName>
