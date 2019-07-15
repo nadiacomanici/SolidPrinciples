@@ -20,9 +20,16 @@ namespace LiskovSubstitutionPrinciple_Army_End.Logic
 
         public override void Attack(string commandToAttack)
         {
-            foreach (var soldier in SoldiersUnderCommand)
+            if (SoldiersUnderCommand.Count > 0)
             {
-                soldier.Attack($"{commandToAttack} -> {Name}");
+                foreach (var soldier in SoldiersUnderCommand)
+                {
+                    soldier.Attack($"{commandToAttack} -> {Name}");
+                }
+            }
+            else
+            {
+                base.Attack(commandToAttack);
             }
         }
     }

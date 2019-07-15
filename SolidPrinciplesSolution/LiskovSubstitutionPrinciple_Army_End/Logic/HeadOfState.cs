@@ -5,11 +5,12 @@ namespace LiskovSubstitutionPrinciple_Army_End.Logic
 {
     public class HeadOfState : RegisteredSoldier, ICommander
     {
-        public List<Soldier> SoldiersUnderCommand { get; private set; }
+        public List<ICommandable> SoldiersUnderCommand { get; private set; }
 
         public HeadOfState(int id, string name, string rank)
             : base(id, name, rank)
         {
+            SoldiersUnderCommand = new List<ICommandable>();
         }
 
         public void DeclareWar()
@@ -17,10 +18,25 @@ namespace LiskovSubstitutionPrinciple_Army_End.Logic
 
         }
 
-        public void TakeSoldierUnderCommand(Soldier soldier)
+        public void TakeSoldierUnderCommand(ICommandable soldier)
         {
             soldier.HierarchicalSuperior = this;
             SoldiersUnderCommand.Add(soldier);
+        }
+
+        public override void Attack(string commandToAttack)
+        {
+            if (SoldiersUnderCommand.Count > 0)
+            {
+                foreach (var soldier in SoldiersUnderCommand)
+                {
+                    soldier.Attack($"{commandToAttack} -> {Name}");
+                }
+            }
+            else
+            {
+                base.Attack(commandToAttack);
+            }
         }
     }
 }
