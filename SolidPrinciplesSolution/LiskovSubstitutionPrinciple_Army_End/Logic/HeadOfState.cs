@@ -15,7 +15,7 @@ namespace LiskovSubstitutionPrinciple_Army_End.Logic
 
         public void DeclareWar()
         {
-
+            Console.WriteLine("WAAAAR");
         }
 
         public void TakeSoldierUnderCommand(ICommandable soldier)

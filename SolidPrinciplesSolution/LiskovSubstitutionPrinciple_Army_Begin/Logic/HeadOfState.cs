@@ -16,7 +16,7 @@ namespace LiskovSubstitutionPrinciple_Army_Begin.Logic
 
         public void DeclareWar()
         {
-
+            Console.WriteLine("WAAAAR");
         }
     }
 }

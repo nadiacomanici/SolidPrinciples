@@ -8,11 +8,12 @@ namespace LiskovSubstitutionPrinciple_Army_End
         {
             int id = 1;
 
-            // napoleon
-            // --> jacques
-            // --> philipe
-            // ------> pasquale
-            // ------> gaston
+            // Hierarchy:
+            //  napoleon
+            //  --> jacques
+            //  --> philipe
+            //  ------> pasquale
+            //  ------> gaston
 
             var napoleon = new HeadOfState(id++, "Napoleon Bonaparte", "Commander in chief");
 
