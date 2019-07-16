@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\ICommander.cs" />
     <Compile Include="Logic\HeadOfState.cs" />
+    <Compile Include="Logic\IBaseSoldier.cs" />
+    <Compile Include="Logic\IReportable.cs" />
     <Compile Include="Logic\Officer.cs" />
+    <Compile Include="Logic\BaseSoldier.cs" />
     <Compile Include="Logic\Soldier.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

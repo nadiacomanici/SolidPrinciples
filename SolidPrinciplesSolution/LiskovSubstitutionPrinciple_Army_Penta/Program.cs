@@ -22,7 +22,7 @@ namespace LiskovSubstitutionPrinciple_Army_Penta
             var philipeColonel = new Officer(id++, "Colonel Philipe", "Colonel");
             napoleon.TakeSoldierUnderCommand(philipeColonel);
 
-            var pasqualeSoldier = new Soldier(id++, "Pasquale", "Infanterist");
+            var pasqualeSoldier = new Officer(id++, "Pasquale", "Infanterist");
             philipeColonel.TakeSoldierUnderCommand(pasqualeSoldier);
 
             var gastonSoldier = new Soldier(id++, "Gaston", "Infanterist");

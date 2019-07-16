@@ -9,7 +9,7 @@ namespace LiskovSubstitutionPrinciple_Square_Penta.Logic
     public class Rectangle : Shape
     {
         public int Width { get; set; }
-        public int Height { get; set; }
+        public virtual int Height { get; set; }
 
         public Rectangle(int width, int height)
         {

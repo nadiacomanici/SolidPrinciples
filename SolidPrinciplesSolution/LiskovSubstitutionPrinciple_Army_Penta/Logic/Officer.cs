@@ -2,7 +2,7 @@
 
 namespace LiskovSubstitutionPrinciple_Army_Penta.Logic
 {
-    public class Officer : Soldier
+    public class Officer : Soldier, ICommander
     {
         public List<Soldier> SoldiersUnderCommand { get; protected set; }
 
