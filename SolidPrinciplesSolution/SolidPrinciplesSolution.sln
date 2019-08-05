@@ -47,6 +47,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovSubstitutionPrinciple
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovSubstitutionPrinciple_Army_Penta", "LiskovSubstitutionPrinciple_Army_Penta\LiskovSubstitutionPrinciple_Army_Penta.csproj", "{56092989-891C-40EA-A349-F96DF8C58134}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple_Museum_Begin", "OpenClosedPrinciple_Museum_Begin\OpenClosedPrinciple_Museum_Begin.csproj", "{75F9BBAF-BABE-4DF8-95FF-80F79933567D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple_Museum_TemplateMethod_End", "OpenClosedPrinciple_Museum_TemplateMethod_End\OpenClosedPrinciple_Museum_TemplateMethod_End.csproj", "{0F04B952-02A9-4413-8063-5C86885D1989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple_Museum_Strategy_End", "OpenClosedPrinciple_Museum_Strategy_End\OpenClosedPrinciple_Museum_Strategy_End.csproj", "{2B5E31E7-1D9A-4C0F-9F92-961DF8620D12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple_Museum_Strategy_Penta", "OpenClosedPrinciple_Museum_Strategy_Penta\OpenClosedPrinciple_Museum_Strategy_Penta.csproj", "{5C4865FB-4CC6-4E80-94CE-33570EAF9DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple_Museum_TemplateMethod_Penta", "OpenClosedPrinciple_Museum_TemplateMethod_Penta\OpenClosedPrinciple_Museum_TemplateMethod_Penta.csproj", "{50370AC4-9BA1-4BC8-A5B1-3717E7AA8A93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +151,26 @@ Global
 		{56092989-891C-40EA-A349-F96DF8C58134}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56092989-891C-40EA-A349-F96DF8C58134}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56092989-891C-40EA-A349-F96DF8C58134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F9BBAF-BABE-4DF8-95FF-80F79933567D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F9BBAF-BABE-4DF8-95FF-80F79933567D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F9BBAF-BABE-4DF8-95FF-80F79933567D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F9BBAF-BABE-4DF8-95FF-80F79933567D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F04B952-02A9-4413-8063-5C86885D1989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F04B952-02A9-4413-8063-5C86885D1989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F04B952-02A9-4413-8063-5C86885D1989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F04B952-02A9-4413-8063-5C86885D1989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5E31E7-1D9A-4C0F-9F92-961DF8620D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5E31E7-1D9A-4C0F-9F92-961DF8620D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5E31E7-1D9A-4C0F-9F92-961DF8620D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5E31E7-1D9A-4C0F-9F92-961DF8620D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C4865FB-4CC6-4E80-94CE-33570EAF9DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C4865FB-4CC6-4E80-94CE-33570EAF9DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C4865FB-4CC6-4E80-94CE-33570EAF9DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C4865FB-4CC6-4E80-94CE-33570EAF9DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50370AC4-9BA1-4BC8-A5B1-3717E7AA8A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50370AC4-9BA1-4BC8-A5B1-3717E7AA8A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50370AC4-9BA1-4BC8-A5B1-3717E7AA8A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50370AC4-9BA1-4BC8-A5B1-3717E7AA8A93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
