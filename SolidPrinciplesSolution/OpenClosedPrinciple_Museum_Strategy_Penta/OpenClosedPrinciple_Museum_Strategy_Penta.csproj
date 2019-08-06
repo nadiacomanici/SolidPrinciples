@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\Adult.cs" />
+    <Compile Include="Logic\Child.cs" />
     <Compile Include="Logic\Museum.cs" />
     <Compile Include="Logic\Person.cs" />
+    <Compile Include="Logic\Senior.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

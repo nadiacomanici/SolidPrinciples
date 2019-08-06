@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\Strategies\ITicketStrategy.cs" />
     <Compile Include="Logic\Person.cs" />
     <Compile Include="Logic\Museum.cs" />
+    <Compile Include="Logic\Strategies\AdultTicketStrategy.cs" />
+    <Compile Include="Logic\Strategies\ChildTicketStrategy.cs" />
+    <Compile Include="Logic\Strategies\SeniorTicketStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
