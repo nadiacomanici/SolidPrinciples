@@ -4,15 +4,15 @@ namespace LiskovSubstitutionPrinciple_Army_End.Logic
 {
     public class Officer : Soldier, ICommander
     {
-        public List<ICommandable> SoldiersUnderCommand { get; protected set; }
+        public List<IReportable> SoldiersUnderCommand { get; protected set; }
 
         public Officer(int id, string name, string rank)
             : base(id, name, rank)
         {
-            SoldiersUnderCommand = new List<ICommandable>();
+            SoldiersUnderCommand = new List<IReportable>();
         }
 
-        public void TakeSoldierUnderCommand(ICommandable soldier)
+        public void TakeSoldierUnderCommand(IReportable soldier)
         {
             soldier.HierarchicalSuperior = this;
             SoldiersUnderCommand.Add(soldier);

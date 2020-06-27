@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{33A6A803-A73F-48AA-AD5B-6F9206D809BE}</ProjectGuid>
+    <ProjectGuid>{FA178A58-C9C2-4F89-AEBB-79120BA213BF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LiskovSubstitutionPrinciple_Army_End</RootNamespace>
-    <AssemblyName>LiskovSubstitutionPrinciple_Army_End</AssemblyName>
+    <RootNamespace>OpenClosedPrinciple_Museum_TemplateMethod_Demo</RootNamespace>
+    <AssemblyName>OpenClosedPrinciple_Museum_TemplateMethod_Demo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logic\ICommander.cs" />
-    <Compile Include="Logic\HeadOfState.cs" />
-    <Compile Include="Logic\IReportable.cs" />
-    <Compile Include="Logic\IRegisteredSoldier.cs" />
-    <Compile Include="Logic\Officer.cs" />
-    <Compile Include="Logic\RegisteredSoldier.cs" />
-    <Compile Include="Logic\Soldier.cs" />
+    <Compile Include="Logic\AdolescentTicketStrategy.cs" />
+    <Compile Include="Logic\AdultTicketStrategy.cs" />
+    <Compile Include="Logic\ChildTicketStrategy.cs" />
+    <Compile Include="Logic\Museum.cs" />
+    <Compile Include="Logic\Person.cs" />
+    <Compile Include="Logic\SeniorTicketStrategy.cs" />
+    <Compile Include="Logic\TicketStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

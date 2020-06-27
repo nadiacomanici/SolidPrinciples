@@ -59,11 +59,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversion_Orders_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregation_Vehicles_Demo", "InterfaceSegregation_Vehicles_Demo\InterfaceSegregation_Vehicles_Demo.csproj", "{CDBCF1EC-128F-408A-AF6E-91A97CBDB4F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple_Museum_Demo", "OpenClosedPrinciple_Museum_Demo\OpenClosedPrinciple_Museum_Demo.csproj", "{29721AE1-361D-4491-A2FB-9050DAFF8888}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple_Museum_Strategy_Demo", "OpenClosedPrinciple_Museum_Strategy_Demo\OpenClosedPrinciple_Museum_Strategy_Demo.csproj", "{29721AE1-361D-4491-A2FB-9050DAFF8888}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovSubstitutionPrinciple_Army_Demo", "LiskovSubstitutionPrinciple_Army_Demo\LiskovSubstitutionPrinciple_Army_Demo.csproj", "{02B2965D-EF96-4FAE-A505-01FB4B4B7739}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovSubstitutionPrinciple_Square_Demo", "LiskovSubstitutionPrinciple_Square_Demo\LiskovSubstitutionPrinciple_Square_Demo.csproj", "{A0A30F90-2B57-424E-822B-78F255A7495A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversion_Orders_Demo2", "DependencyInversion_Orders_Demo2\DependencyInversion_Orders_Demo2.csproj", "{E6A61602-DCD1-42B9-86BE-0BAB409F8F3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple_Museum_TemplateMethod_Demo", "OpenClosedPrinciple_Museum_TemplateMethod_Demo\OpenClosedPrinciple_Museum_TemplateMethod_Demo.csproj", "{FA178A58-C9C2-4F89-AEBB-79120BA213BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -175,6 +179,14 @@ Global
 		{A0A30F90-2B57-424E-822B-78F255A7495A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0A30F90-2B57-424E-822B-78F255A7495A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0A30F90-2B57-424E-822B-78F255A7495A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A61602-DCD1-42B9-86BE-0BAB409F8F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A61602-DCD1-42B9-86BE-0BAB409F8F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A61602-DCD1-42B9-86BE-0BAB409F8F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A61602-DCD1-42B9-86BE-0BAB409F8F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA178A58-C9C2-4F89-AEBB-79120BA213BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA178A58-C9C2-4F89-AEBB-79120BA213BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA178A58-C9C2-4F89-AEBB-79120BA213BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA178A58-C9C2-4F89-AEBB-79120BA213BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -206,6 +218,8 @@ Global
 		{29721AE1-361D-4491-A2FB-9050DAFF8888} = {4369F149-F26B-4009-8724-FA02F632C710}
 		{02B2965D-EF96-4FAE-A505-01FB4B4B7739} = {979E6827-7062-4BB3-A8B6-6110C1F6C656}
 		{A0A30F90-2B57-424E-822B-78F255A7495A} = {979E6827-7062-4BB3-A8B6-6110C1F6C656}
+		{E6A61602-DCD1-42B9-86BE-0BAB409F8F3F} = {73056E8A-E4D6-4B04-AAC5-0B486C63A3A0}
+		{FA178A58-C9C2-4F89-AEBB-79120BA213BF} = {4369F149-F26B-4009-8724-FA02F632C710}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7641F4B0-3796-42E5-8C02-B4278FA9C522}

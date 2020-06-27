@@ -8,6 +8,32 @@ namespace LiskovSubstitutionPrinciple_Square_Demo.Logic
 {
     public class Square : Rectangle
     {
+        public override int Width
+        {
+            get
+            {
+                return base.Width;
+            }
+            set
+            {
+                base.Width = value;
+                base.Height = value;
+            }
+        }
+
+        public override int Height
+        {
+            get
+            {
+                return base.Height;
+            }
+            set
+            {
+                base.Width = value;
+                base.Height = value;
+            }
+        }
+
         public Square(int length) : base(length, length)
         {
         }

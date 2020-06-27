@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LiskovSubstitutionPrinciple_Army_End.Logic
 {
-    public interface ICommandable : IRegisteredSoldier
+    public interface IReportable : IRegisteredSoldier
     {
         ICommander HierarchicalSuperior { get; set; }
         void ReportToSuperior();

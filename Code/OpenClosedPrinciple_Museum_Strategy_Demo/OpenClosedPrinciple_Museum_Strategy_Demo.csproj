@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{29721AE1-361D-4491-A2FB-9050DAFF8888}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OpenClosedPrinciple_Museum_Demo</RootNamespace>
-    <AssemblyName>OpenClosedPrinciple_Museum_Demo</AssemblyName>
+    <RootNamespace>OpenClosedPrinciple_Museum_Strategy_Demo</RootNamespace>
+    <AssemblyName>OpenClosedPrinciple_Museum_Strategy_Demo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\Adolescent.cs" />
+    <Compile Include="Logic\Adult.cs" />
+    <Compile Include="Logic\Infant.cs" />
     <Compile Include="Logic\Museum.cs" />
     <Compile Include="Logic\Person.cs" />
+    <Compile Include="Logic\Senior.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

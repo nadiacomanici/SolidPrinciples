@@ -2,7 +2,7 @@
 
 namespace LiskovSubstitutionPrinciple_Army_End.Logic
 {
-    public class Soldier : RegisteredSoldier, ICommandable
+    public class Soldier : RegisteredSoldier, IReportable
     {
         public ICommander HierarchicalSuperior { get; set; }
 

@@ -7,7 +7,7 @@ namespace DependencyInversion_DateTime_Begin
     {
         static void Main(string[] args)
         {
-            var greeter = new TimeOfDayGreeter();
+            var greeter = new TimeOfDayGreeter(new DateTimeProvider());
             Console.WriteLine(greeter.GetProperGreeting("Nadia"));
         }
     }

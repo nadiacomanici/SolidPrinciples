@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OpenClosedPrinciple_Museum_Demo")]
+[assembly: AssemblyTitle("SingleResponsability_Orders_Demo")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OpenClosedPrinciple_Museum_Demo")]
+[assembly: AssemblyProduct("SingleResponsability_Orders_Demo")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("75f9bbaf-babe-4df8-95ff-80f79933567d")]
+[assembly: Guid("f0a0a9ca-dd47-43cc-beed-43820d0afa26")]
 
 // Version information for an assembly consists of the following four values:
 //

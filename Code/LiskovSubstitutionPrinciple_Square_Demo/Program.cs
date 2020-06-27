@@ -11,8 +11,8 @@ namespace LiskovSubstitutionPrinciple_Square_Demo
     {
         static void Main(string[] args)
         {
-            var shape = new Rectangle(10, 30);
-            //var shape = new Square(10);
+            //var shape = new Rectangle(10, 30);
+            var shape = new Square(10);
 
             Console.WriteLine($"Initially: {shape.Width} x {shape.Height} = {shape.GetArea()}");
 

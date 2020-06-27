@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace OpenClosedPrinciple_Museum_Demo.Logic
+namespace OpenClosedPrinciple_Museum_Strategy_Demo.Logic
 {
     public class Museum
     {
@@ -21,22 +21,7 @@ namespace OpenClosedPrinciple_Museum_Demo.Logic
 
             // All children under 7 years have free entry
             // All senior citizens (> 65 years) have 50% reduced ticket
-            double ticketPrice = 0;
-            if (person.Age < 7)
-            {
-                ticketPrice = 0;
-            }
-            else
-            {
-                if (person.Age > 65)
-                {
-                    ticketPrice = _fullTicketPrice / 2;
-                }
-                else
-                {
-                    ticketPrice = _fullTicketPrice;
-                }
-            }
+            double ticketPrice = _fullTicketPrice * person.GetTicketMultiplier();
             IncomeFromTickets += ticketPrice;
         }
     }
