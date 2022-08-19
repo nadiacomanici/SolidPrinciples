@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterfaceSegregation_Vehicles_Begin_Begin.Logic
+namespace InterfaceSegregation_Vehicles_Begin.Logic
 {
     public class Coordinate3D
     {

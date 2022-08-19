@@ -1,9 +1,8 @@
 ﻿using System;
-using SingleResponsability_Orders_End.Logic.Contracts;
 
 namespace SingleResponsability_Orders_End.Logic.Implementations
 {
-    public class NotificationService : INotificationService
+    public class NotificationService
     {
         public void NotifyCustomer(Cart cart, Customer customer)
         {

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63F38446-D6D9-4C1C-B359-AA6B39A83AA7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DependencyInversion_Orders_Begin</RootNamespace>
+    <AssemblyName>DependencyInversion_Orders_Begin</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Logic\Carts\Cart.cs" />
+    <Compile Include="Logic\Carts\CartItem.cs" />
+    <Compile Include="Logic\Customer.cs" />
+    <Compile Include="Logic\Exceptions\InsufficientInventoryException.cs" />
+    <Compile Include="Logic\Exceptions\OrderException.cs" />
+    <Compile Include="Logic\Implementations\NotificationService.cs" />
+    <Compile Include="Logic\Implementations\PaymentProcessor.cs" />
+    <Compile Include="Logic\Implementations\ReservationService.cs" />
+    <Compile Include="Logic\Inventories\InventoryItem.cs" />
+    <Compile Include="Logic\Inventories\InventorySystem.cs" />
+    <Compile Include="Logic\Logger.cs" />
+    <Compile Include="Logic\Orders\OnlineOrder.cs" />
+    <Compile Include="Logic\Orders\Order.cs" />
+    <Compile Include="Logic\Orders\POSCashOrder.cs" />
+    <Compile Include="Logic\Orders\POSCreditOrder.cs" />
+    <Compile Include="Logic\CreditCard.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

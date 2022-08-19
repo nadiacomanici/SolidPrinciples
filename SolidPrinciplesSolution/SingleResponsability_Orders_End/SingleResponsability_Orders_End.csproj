@@ -8,10 +8,11 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>SingleResponsability_Orders_End</RootNamespace>
     <AssemblyName>SingleResponsability_Orders_End</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,9 +46,6 @@
   <ItemGroup>
     <Compile Include="Logic\Cart.cs" />
     <Compile Include="Logic\CartItem.cs" />
-    <Compile Include="Logic\Contracts\INotificationService.cs" />
-    <Compile Include="Logic\Contracts\IPaymentProcessor.cs" />
-    <Compile Include="Logic\Contracts\IReservationService.cs" />
     <Compile Include="Logic\Customer.cs" />
     <Compile Include="Logic\Exceptions\InsufficientInventoryException.cs" />
     <Compile Include="Logic\Exceptions\OrderException.cs" />
@@ -59,7 +57,7 @@
     <Compile Include="Logic\Orders\Order.cs" />
     <Compile Include="Logic\Orders\POSCashOrder.cs" />
     <Compile Include="Logic\Orders\POSCreditOrder.cs" />
-    <Compile Include="Logic\CreditCardPaymentDetails.cs" />
+    <Compile Include="Logic\CreditCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

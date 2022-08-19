@@ -1,28 +1,28 @@
-﻿using SingleResponsability_Orders_End.Logic.Contracts;
-using SingleResponsability_Orders_End.Logic.Implementations;
+﻿using SingleResponsability_Orders_End.Logic.Implementations;
 
 namespace SingleResponsability_Orders_End.Logic.Orders
 {
     public class OnlineOrder : Order
     {
-        private readonly CreditCardPaymentDetails paymentDetails;
-        private readonly INotificationService notificationService;
-        private readonly IPaymentProcessor paymentProcessor;
+        private readonly CreditCard _creditCard;
+        private readonly NotificationService _notificationService;
+        private readonly PaymentProcessor _paymentProcessor;
+        private readonly ReservationService _reservationService;
 
-        public OnlineOrder(Cart cart, Customer customer, CreditCardPaymentDetails paymentDetails)
+        public OnlineOrder(Cart cart, Customer customer, CreditCard paymentDetails)
             : base(cart, customer)
         {
-            this.paymentDetails = paymentDetails;
-            this.notificationService = new NotificationService();
-            this.reservationService = new ReservationService();
-            this.paymentProcessor = new PaymentProcessor();
+            _creditCard = paymentDetails;
+            _notificationService = new NotificationService();
+            _reservationService = new ReservationService();
+            _paymentProcessor = new PaymentProcessor();
         }
 
         public override void Checkout()
         {
-            paymentProcessor.ProcessCreditCard(paymentDetails, cart);
-            base.Checkout();
-            notificationService.NotifyCustomer(cart, customer);
+            _paymentProcessor.ProcessCreditCard(_creditCard, _cart);
+            _reservationService.ReserveInventory(_cart);
+            _notificationService.NotifyCustomer(_cart, _customer);
         }
     }
 }

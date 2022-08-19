@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using InterfaceSegregation_Vehicles_Begin_Begin.Logic.Contracts;
-using InterfaceSegregation_Vehicles_Begin_Begin.Logic.Implementations;
+using InterfaceSegregation_Vehicles_Begin.Logic.Contracts;
+using InterfaceSegregation_Vehicles_Begin.Logic.Implementations;
 
 namespace InterfaceSegregation_Vehicles_Begin
 {

@@ -1,4 +1,4 @@
-﻿namespace InterfaceSegregation_Vehicles_Begin_Begin.Logic.Contracts
+﻿namespace InterfaceSegregation_Vehicles_Begin.Logic.Contracts
 {
     public interface IVehicle
     {

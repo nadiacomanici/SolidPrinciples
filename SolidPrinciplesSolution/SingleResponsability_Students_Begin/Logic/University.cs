@@ -96,7 +96,14 @@ namespace SingleResponsability_Students_Begin.Logic
                     }
                 }
             }
-            nextId = admittedStudents.Max(s => s.Id) + 1;
+            if (admittedStudents.Count > 0)
+            {
+                nextId = admittedStudents.Max(s => s.Id) + 1;
+            }
+            else
+            {
+                nextId = 1;
+            }
         }
 
         public void SaveStudentsToFile()

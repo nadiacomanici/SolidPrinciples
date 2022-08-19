@@ -1,7 +1,7 @@
 ﻿using System;
-using InterfaceSegregation_Vehicles_Begin_Begin.Logic.Contracts;
+using InterfaceSegregation_Vehicles_Begin.Logic.Contracts;
 
-namespace InterfaceSegregation_Vehicles_Begin_Begin.Logic.Implementations
+namespace InterfaceSegregation_Vehicles_Begin.Logic.Implementations
 {
     public class BatMobile : IVehicle
     {
