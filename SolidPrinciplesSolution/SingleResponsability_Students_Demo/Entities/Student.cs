@@ -1,4 +1,4 @@
-﻿namespace SingleResponsability_Students_Demo.Logic
+﻿namespace SingleResponsability_Students_Demo.Entities
 {
     public class Student
     {
