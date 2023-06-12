@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SingleResponsability_Students_Demo.IOManagement;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -8,6 +9,8 @@ namespace SingleResponsability_Students_Demo.Logic
 {
     public class University
     {
+        private CsvFileIOManagement _csvFileIOManagement;
+
         private int nextId = 1;
         private List<Student> admittedStudents;
 
@@ -19,8 +22,9 @@ namespace SingleResponsability_Students_Demo.Logic
             }
         }
 
-        public University()
+        public University(CsvFileIOManagement csvFileIOManagement)
         {
+            _csvFileIOManagement = csvFileIOManagement;
             admittedStudents = new List<Student>();
             LoadStudentsFromFile();
         }
@@ -31,7 +35,8 @@ namespace SingleResponsability_Students_Demo.Logic
         {
             Student student = new Student(nextId++, firstName, lastName, admissionMark);
             admittedStudents.Add(student);
-            SaveStudentsToFile();
+            _csvFileIOManagement.SaveStudentsToFile(admittedStudents);
+            //SaveStudentsToFile();
             return student;
         }
 
@@ -41,12 +46,14 @@ namespace SingleResponsability_Students_Demo.Logic
             if (student != null)
             {
                 admittedStudents.Remove(student);
-                SaveStudentsToFile();
+                _csvFileIOManagement.SaveStudentsToFile(admittedStudents);
+                //SaveStudentsToFile();
                 return true;
             }
             return false;
         }
-        #endregion
+
+        #endregion Students list operations
 
         #region Statistics
 
@@ -60,26 +67,18 @@ namespace SingleResponsability_Students_Demo.Logic
             get { return admittedStudents.Max(student => student.AdmissionMark); }
         }
 
-        #endregion
+        #endregion Statistics
 
         #region Serialization
-        private string GetFullFilePath()
-        {
-            string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "University");
-            if (!Directory.Exists(folder))
-            {
-                Directory.CreateDirectory(folder);
-            }
-            return Path.Combine(folder, "university.csv");
-        }
 
         private void LoadStudentsFromFile()
         {
-            string fullFilePath = GetFullFilePath();
+            // new instance of CsvFileIOManagement
+
             admittedStudents = new List<Student>();
-            if (File.Exists(fullFilePath))
+            if (File.Exists(_csvFileIOManagement.GetFullFilePath()))
             {
-                using (var writer = new StreamReader(fullFilePath))
+                using (var writer = new StreamReader(_csvFileIOManagement.GetFullFilePath()))
                 {
                     string line = writer.ReadLine();
                     while (line != null)
@@ -106,19 +105,6 @@ namespace SingleResponsability_Students_Demo.Logic
             }
         }
 
-        public void SaveStudentsToFile()
-        {
-            string fullFilePath = GetFullFilePath();
-
-            using (var writer = new StreamWriter(fullFilePath))
-            {
-                foreach (var s in admittedStudents)
-                {
-                    writer.WriteLine($"{s.Id},{s.FirstName},{s.LastName},{s.AdmissionMark.ToString(CultureInfo.InvariantCulture)}");
-                }
-            }
-        }
-
-        #endregion
+        #endregion Serialization
     }
 }

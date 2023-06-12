@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IOManagement\CsvFileIOManagement.cs" />
     <Compile Include="Logic\Student.cs" />
     <Compile Include="Logic\University.cs" />
     <Compile Include="Program.cs" />
